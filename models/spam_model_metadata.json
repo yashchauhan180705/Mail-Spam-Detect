@@ -1,0 +1,11 @@
+{
+  "model_name": "spam_model",
+  "accuracy": 0.9607137501874344,
+  "training_samples": 33345,
+  "feedback_samples": 0,
+  "timestamp": "2025-09-30T15:21:52.403272",
+  "label_map": {
+    "ham": 0,
+    "spam": 1
+  }
+}
