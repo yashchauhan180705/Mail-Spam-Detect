@@ -1,0 +1,21 @@
+name: base  # Matches your GitHub Actions workflow (--name base)
+channels:
+  - pytorch      # Prioritized for PyTorch packages
+  - conda-forge  # Reliable for most packages
+  - defaults
+dependencies:
+  - python=3.10  # Your specified Python version
+  - pip          # For pip-installable packages
+  - pandas       # Data handling
+  - numpy        # Numerical computing
+  - joblib       # Model saving/loading
+  - streamlit    # Web app framework
+  - scikit-learn # ML: train_test_split, TfidfVectorizer, LogisticRegression
+  - stable-baselines3  # RL: DQN (pulls pytorch as dep)
+  - gymnasium    # RL: Gym env
+  - pytorch      # PyTorch core (CPU variant auto-selected in CI)
+  - pytest       # Testing
+  - flake8       # Linting
+  - pip:
+    - nltk       # Text processing (optional; for spam features like tokenization)
+    # No PyTorch here—Conda handles it
